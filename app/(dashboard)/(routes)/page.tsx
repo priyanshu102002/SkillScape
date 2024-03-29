@@ -1,6 +1,13 @@
+"use client";
+
+import { UserButton } from "@clerk/nextjs";
+
 
 export default function Home() {
-  return (
-    <h1>Hello</h1>
-  );
+	return (
+		<div className="bg-gray-300">
+			<h1>Hello ji Home Page</h1>
+			<UserButton afterSignOutUrl="/" />
+		</div>
+	);
 }
